@@ -1,0 +1,222 @@
+body {
+  background-image: url("../images/body.jpg");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  min-height:100vh;
+}
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.5s ease;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  border: 1px solid #ffc107; 
+  border-radius: 5px;
+ 
+}
+.box {
+    width: 100%;
+    min-height: 150px;
+    border-radius: 12px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2050;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .social-icons {
+    
+    bottom: 650px;
+  }
+}
+@media (max-width: 768px) {
+ .carousel-control-prev,
+.carousel-control-next {
+    
+    margin-bottom: 80px;
+  }
+}
+.card  {   
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 50%; 
+    z-index: -1; 
+    transition: all 0.7s ease; 
+    transform: translate(-50%, -50%);
+}
+.card:hover::before {
+    width: 150%; 
+    height: 600px; 
+    border-radius: 0; 
+}
+.team-card1 {
+  background-image: url(../images/im1.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #fff;
+  height: 100%;
+}
+.team-card2 {
+  background-image: url(../images/im2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #fff;
+  height: 100%;
+}
+.team-card3 {
+  background-image: url(../images/im3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #fff;
+  height: 100%;
+}
+.team-card1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+ z-index:1;
+}
+.team-card2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+ z-index:1;
+}
+.team-card3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+ z-index:1;
+}
+.team-card1 * {
+  position: relative;
+  z-index:2;
+}
+.team-card2 * {
+  position: relative;
+  z-index:2;
+}
+.team-card3 * {
+  position: relative;
+  z-index:2;
+}
+.team-date {
+  font-size: 13px;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+.team-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 40%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-left: 25px;
+  margin-top: 10px; 
+}
+.team-name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.team-role {
+  font-size: 13px;
+  color:#ccc;
+}
+.team-card1 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden; 
+}
+.team-card1:hover {
+    transform: scale(0.90);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.team-card2 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden; 
+}
+.team-card2:hover {
+    transform: scale(0.90);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.team-card3 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden; 
+}
+.team-card3:hover {
+    transform: scale(0.90);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.btn-custom:hover{
+ background-color: gray;
+}
+col-md-5 {
+    overflow: hidden;
+}
+.slanted-left, .slanted-right {
+    transition: transform 0.5s ease-in-out;
+}
+.podcast-card:hover .slanted-left, 
+.podcast-card:hover .slanted-right {
+    transform: scale(1.1); 
+}
+.custom-card {
+    transition: transform 0.3s ease-in-out;
+}
+.custom-card:hover {
+    transform: scale(1.05); 
+    z-index: 10; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+}
+.d-social:hover{
+ transform: scale(1.1);
+ transition: 0.5s;
+}
+/*  ======================================================================*/
