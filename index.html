@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+   <link rel="stylesheet" href="css/stylee.css">
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .carousel-item {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+
+   
+
+    <div class="d-flex align-items-center ms-5  me-5">
+      <img src="images/ph1.webp" width="50" height="50" class="me-2">
+      <h2 class="text-warning fs-5 fs-sm-4 mb-0 ms-1  me-3">Restaurant</h2>
+    </div>
+
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto ms-sm-4">
+        <li class="nav-item"><a class="nav-link fs-6 fs-md-5 fw-bold" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-6 fs-md-5  fw-bold" href="#">About</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fs-6 fs-md-5  fw-bold" data-bs-toggle="dropdown" href="#">Menu</a>
+          <ul class="dropdown-menu bg-dark ">
+            <li><a class="dropdown-item text-secondary  fw-bold" href="#">Burger</a></li>
+            <li><a class="dropdown-item text-secondary  fw-bold" href="#">Pizza</a></li>
+            <li><a class="dropdown-item text-secondary  fw-bold" href="#">Chicken</a></li>
+            <li><a class="dropdown-item text-secondary  fw-bold" href="#">Healthy Salad</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link fs-6 fs-md-5 fw-bold" href="#">Help</a></li>
+      </ul>
+
+     
+      <form class="d-flex flex-column flex-sm-row gap-2 ms-1 me-3">
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn btn-warning fw-bold">Search</button>
+        <button type="button" class="btn bg-white text-warning fw-bold ms-1 me-3"
+                data-bs-toggle="modal" data-bs-target="#loginModal">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<!------------------------------------ssss1----------------e--------------------------------->
+
+<div id="foodCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+ 
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+
+
+<!--------- Slide 1 -->
+
+  <div class="carousel-inner">
+
+    
+      <div class="carousel-item active" style="background-image: url('images/back4.jpg');">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card bg-dark bg-opacity-75 text-white text-center p-3 p-md-4
+                    col-11 col-sm-8 col-md-6 col-lg-4">
+          <img src="images/back4.jpg" class="img-fluid rounded mb-3">
+          <h5 class="fs-4 fs-md-3">CHicken</h5>
+          <p class="fs-6 fs-md-5">That Chicken <img src="images/ph4.jpg" alt="Burger" class="me-1" width="35" height="30"> was absolutely amazing!</p>
+          <a href="#" class="btn btn-warning fw-bold">Call us</a>
+        </div>
+      </div>
+    </div>
+
+   
+  
+
+    <!-----------------------------------slide 1 ---------------------------------------------- -->
+
+         <!-- Slide 2 -->
+
+      <div class="carousel-item active" style="background-image: url('images/back2.jpg');">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card bg-dark bg-opacity-75 text-white text-center p-3 p-md-4
+                    col-11 col-sm-8 col-md-6 col-lg-4">
+          <img src="images/back2.jpg" class="img-fluid rounded mb-3">
+          <h5 class="fs-4 fs-md-3">Pizza</h5>
+          <p class="fs-6 fs-md-5">That Pizza <img src="images/ph2.webp" alt="Burger" class="me-1" width="35" height="30"> was absolutely amazing!</p>
+          <a href="#" class="btn btn-warning fw-bold">Call us</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-----------------------------------slide 2 ---------------------------------------------- -->
+
+         <!-- Slide 3 -->
+
+        <div class="carousel-item active" style="background-image: url('images/back1.jpg');">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card bg-dark bg-opacity-75 text-white text-center p-3 p-md-4
+                    col-11 col-sm-8 col-md-6 col-lg-4">
+          <img src="images/back1.jpg" class="img-fluid rounded mb-3">
+          <h5 class="fs-4 fs-md-3">Burger</h5>
+          <p class="fs-6 fs-md-5">That burger <img src="images/ph1.webp" alt="Burger" class="me-1" width="35" height="30"> was absolutely amazing!</p>
+          <a href="#" class="btn btn-warning fw-bold">Call us</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-----------------------------------slide 3 ---------------------------------------------- -->
+
+         <!-- Slide 4 -->
+
+         
+      <div class="carousel-item active" style="background-image: url('images/back3.webp');">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card bg-dark bg-opacity-75 text-white text-center p-3 p-md-4
+                    col-11 col-sm-8 col-md-6 col-lg-4">
+          <img src="images/back3.webp" class="img-fluid rounded mb-3">
+          <h5 class="fs-4 fs-md-3">Sandwich</h5>
+          <p class="fs-6 fs-md-5">That Sandwich <img src="images/ph3.webp" alt="Burger" class="me-1" width="35" height="30"> was absolutely amazing!</p>
+          <a href="#" class="btn btn-warning fw-bold">Call us</a>
+        </div>
+      </div>
+    </div>
+
+  
+
+
+
+  </div>
+  <!-----------------------------------slide 4 ---------------------------------------------- -->
+
+
+  <!-- shm------------ <  > ------------>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!-- shm------------ <  > ------------>
+
+
+<!-- ================= SOCIAL ICONS ========s========= -->
+<div class="position-fixed top-50 end-0 translate-middle-y me-3 d-flex flex-column gap-3  social-icons"  style="z-index: 2000;">
+  <a href="#" style="font-size: large; color:white; background-color: #1da1f2;"  class="btn btn-primary  btn-md  d-social   border-0  fw-bold "><i class="fab fa-facebook-f  SOCIAL"></i></a>
+  <a href="#" style="font-size: large; color:white; background-color: #1da1f2;"  class="btn btn-success  btn-md d-social  border-0  fw-bold"><i class="fab fa-twitter SOCIAL"></i></a>
+   <a href="#" style="font-size:large;  color:white ;  background-color:#25D366;"  class="btn btn-success  btn-md    border-1 d-social fw-bold"><i class="fab fa-whatsapp SOCIAL"></i></a>
+  <a href="#" style="font-size:large; color:white;"  class="btn btn-primary  btn-md  bg-primary d-social border-1 fw-bold"><i class="fab fa-linkedin-in SOCIAL"></i></a>
+  <a href="#" style="font-size:large; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);"  class="btn btn-danger  d-social  btn-md   border-0  fw-bold"><i class="fab fa-instagram SOCIAL"></i></a>
+ 
+</div>
+
+<!-- ================= SOCIAL ICONS =========e======== -->
+
+<!-- ================= MODAL ================= -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered col-11 col-sm-8 col-md-5">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <input class="form-control mb-3" placeholder="Email">
+          <input type="password" class="form-control mb-3" placeholder="Password">
+            <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember">
+            <label class="form-check-label" for="remember">Remember me</label>
+          </div>
+          <button class="btn btn-warning w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ---------------------------modal-------------------------- -->
+
+
+
+<!-- -------------ssss 2----------------------s------ -->
+
+<div class="full-width-div  bg-secondary  ">
+    <h1 class=" ms-3 text-warning  welcome-1"> Welcome</h1>
+    <p class="text-white  fw-bold  ms-3  welcome-2"> Welcome My Restaurant - Step into a world of gourmet fast food crafled with passion, percision, and premium ingredients. Whether youre craving a juicy burger, artisanal pizza, or a fresh vibrant salad__we have redefined fast dining to offer you elegance flavor, and comfort in every bite, Sit back, relax, and let us serve you excellence__fast.</p>
+    <button class="btn btn-primary btn-md bg-warning  ms-3 fw-bold  mb-3">Learn more</button>
+</div>
+
+<style>
+  .welcome-1{
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+</style>
+
+
+<style>
+  .welcome-2{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+</style>
+
+
+
+
+<div style="height: 25px;"  class=" container-fluid p-0 bg-white  d-flex  align-items-center">
+  <div  style="height:2px; background-color:grey; width:100%;" ></div>
+</div>
+
+
+
+
+
+
+
+<div style="height: 140px;" class="full-width-div  bg-secondary   d-flex  justify-content-center align-items-center  ">
+   <h2 class="text-dark  fw-bold  most">The Most Famous Dishes In Our Restaurant</h2>
+</div>
+
+<style>
+  .most{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+</style>
+
+<div style="height: 25px;"  class=" container-fluid p-0 bg-white"></div>
+
+
+<div class="container-fluid p-0 ">
+  
+
+    <div class="accordion" id="dishesAccordion">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne  ">
+                <button style="font-size: large;" class="accordion-button collapsed  fw-bold  bg-secondary  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Fried Chicken
+                    <span class="ms-auto" style="font-size: 1.5rem; cursor: pointer;">&#x27A4;</span> 
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#dishesAccordion">
+                <div class="accordion-body bg-light fw-bold">
+                    A crispy and favortul meal made with tender chicken pieces, seasoned with special herbs and spices, coaled in crunchy crust. Perfectly fried and served hot with fries. coleslaw, or your favounte souce
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button style="font-size: large;" class="accordion-button collapsed  bg-secondary  text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Types of Salad
+                    <span class="ms-auto" style="font-size: 1.5rem; cursor: pointer;">&#x27A4;</span>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse fw-bold" aria-labelledby="headingTwo" data-bs-parent="#dishesAccordion">
+                <div class="accordion-body bg-light">
+                   Enjoy a variety of fresh and flavorful salads made with hand-picked ingredients. Choose from classic salad, fresh garden salad, tangy Greek salad with olives and fela, or creamy coleslaw perfect as a healthy meal.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button style="font-size: large;" class="accordion-button collapsed  bg-secondary  text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Types of Pizza
+                    <span class="ms-auto" style="font-size: 1.5rem; cursor: pointer;">&#x27A4;</span>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse  fw-bold" aria-labelledby="headingThree" data-bs-parent="#dishesAccordion">
+                <div class="accordion-body bg-light">
+                    iscover a range of deliciouse pizzas to satisfy every craving. From the classic Margheritta with fresh basil and mozzarella, to pepperoni loaded with spicy slices, to BBQ chicken with tangy souce, or veggie pizza toped with colorful vegetables. Hot cheesy, and freshly backed every time.
+                </div>
+            </div>
+        </div>
+
+     </div>
+</div>
+
+<div style="height: 25px;"  class=" container-fluid p-0 bg-white  d-flex  align-items-center">
+  <div  style="height:2px; background-color:grey; width:100%;" ></div>
+</div>
+
+<!-- -----------------------------------------sssss 2 -------e--------------------------------->
+
+
+<!-- ssss  3 ----------------------------arabic--english-------s----- -->
+
+  <div style="height: 140px;" class="full-width-div  bg-secondary  d-flex  justify-content-center align-items-center ">
+   <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="text-dark  fw-bold Translate  ">Translate From Arabic To English.</h2>
+  </div>
+
+
+
+
+
+<div class="container-fluid  bg-secondary-subtle  ">
+    
+    <h3 class="mb-3 fw-bold  text-dark pt-3  ms-3">Write & Translate.</h3>
+    <h4 class="   text-warning mb-3  ms-3 ">Press here...</h4>
+    
+   <div class="form-group mb-3">
+    <textarea class="form-control copy-target  ms-1  fw-bold" rows="7" placeholder="translate:"></textarea>
+</div>
+<button class="btn btn-warning copy-btn  ms-3  mb-3">Copy</button>
+
+
+    <span id="copiedMessage" class="ms-  text-success d-none">Copied!</span> 
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="successModalLabel">Restaurant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    the message copied
+                </div>
+                
+                <div class="modal-footer justify-content-end border-0">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+   </div>
+
+</div>
+
+
+
+<div style="height: 25px;"  class=" container-fluid p-0 bg-white  d-flex  align-items-center">
+  <div  style="height:2px; background-color:grey; width:100%;" ></div>
+</div>
+
+
+<!-- ssss  3 ----------------------------arabic--english----------------------------e------ -->
+
+
+<!-- ssss  3 ----------------------------arabic--frensh-------------------------s------------ -->
+
+<div style="height: 140px;" class="full-width-div  bg-secondary    d-flex  justify-content-center align-items-center">
+   <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="text-dark  fw-bold Translate  ">Translate From Arabic To Frensh.</h2>
+</div>
+
+
+
+
+
+<div class="container-fluid  bg-secondary-subtle  ">
+    
+    <h3 class="mb-3 fw-bold  text-dark pt-3  ms-3">Write & Translate.</h3>
+    <h4 class="   text-warning mb-3  ms-3 ">Press here...</h4>
+    
+    <div class="form-group mb-3">
+    <textarea class="form-control copy-target ms-1  fw-bold" rows="7" placeholder="translate:"></textarea>
+      </div>
+    <button class="btn btn-warning copy-btn  ms-3  mb-3">Copy</button>
+
+
+    <span id="copiedMessage" class="ms-  text-success d-none">Copied!</span> 
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="successModalLabel">Restaurant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    the message copied
+                </div>
+                
+                <div class="modal-footer justify-content-end border-0">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="height: 25px;"  class=" container-fluid p-0 bg-white  d-flex  align-items-center">
+  <div  style="height:2px; background-color:grey; width:100%;" ></div>
+</div>
+
+<!-- ssss  3 ----------------------------arabic--frensh-------------------------e------------ -->
+
+
+<div style="height: 140px;" class="full-width-div  bg-secondary    d-flex  justify-content-center align-items-center  ">
+   <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="text-dark  fw-bold Translate  ">Translate From Arabic To German.</h2>
+</div>
+
+
+
+
+
+
+
+
+<div class="container-fluid  bg-secondary-subtle ">
+    
+    <h3 class="mb-3 fw-bold  text-dark pt-3  ms-3">Write & Translate.</h3>
+    <h4 class="   text-warning mb-3  ms-3 ">Press here...</h4>
+    
+    <div class="form-group mb-3">
+    <textarea class="form-control copy-target ms-1  fw-bold" rows="7" placeholder="translate:"></textarea>
+      </div>
+    <button class="btn btn-warning copy-btn  ms-3  mb-3">Copy</button>
+
+
+    <span id="copiedMessage" class="ms-  text-success d-none">Copied!</span> 
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="successModalLabel">Restaurant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    the message copied
+                </div>
+                
+                <div class="modal-footer justify-content-end border-0">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+   </div>
+
+</div>
+
+
+<div style="height: 25px;"  class=" container-fluid p-0 bg-white ">
+  
+</div>
+
+<!-- ssss  3 ----------------------------arabic--german-------------------------e------------ -->
+
+
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+
+<!-- --------------------ss  4 ------------------s------space------ -->
+ 
+
+ <div class="container-fluid bg-white py-5"  style="margin-top: 550px;">
+
+
+<div style="height: 100px;" class="bg-secondary-subtle  p-0 mb-5   d-flex  justify-content-center align-items-center  ">
+   <h2 class="text-dark  fw-bold  most">Popular Dishes in our Resturant</h2>
+</div>
+  <!-- --------------------ss  4 ------------------e-----space------ -->
+
+
+
+  <!------------------------------ss 5 ----all cards--8-----------s------------------  -->
+  
+  <div class="container">
+    
+    <div class="row g-3">
+      
+      
+  <div class="card  col-12 col-md-6 col-lg-4 shadow-lg ms-3   " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/fr.jpg" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">CHICKEN</h4>
+
+    <p class="card-text  mt-3  fw-bold">Juicy chicken mannated with spices, grilec to perfection, and served hot with flavorful dipping sauce.</p>
+
+    <a href="#" class="btn btn-warning mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+  <div class="card  col-12 col-md-6 col-lg-4 shadow-lg ms-3 " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/salad.webp" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SALAD</h4>
+
+    <p class="card-text  mt-3  fw-bold">Fresh garden vegetables mixed with herbs, olives, and feta cheese create a refreshing
+      salac choice</p>
+
+    <a href="#" class="btn btn-warning mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+  <div class="card  col-12 col-md-6 col-lg-4 shadow-lg ms-3 " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/pizza.jpg" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">PIZZA</h4>
+
+    <p class="card-text  mt-3  fw-bold">Delicious pizza topped with mozzarella, tomatoes, and fresh basil, baked until crust is golden crisp.</p>
+
+    <a href="#" class="btn btn-warning mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+
+
+
+     <!--  -->
+
+
+      <div class="card  col-12 col-md-6 col-lg-4 shadow-lg  ms-3   " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/meal.jpg" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">MEAL</h4>
+
+    <p class="card-text  mt-3  fw-bold">Wholesome meals combining rice, meat, and vegetables served with sauces, offering comforting flavor for everyday dining.
+</p>
+
+    <a href="#" class="btn btn-warning  mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+     
+  <div class="card  col-12 col-md-6 col-lg-4 shadow-lg ms-3 " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/fraid.jpg" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">FRAID</h4>
+
+    <p class="card-text  mt-3  fw-bold">Crispy golden fried potatoes seasoned with salt and herbs, served hot and crunchy alongside many favorite dishes.
+</p>
+
+    <a href="#" class="btn btn-warning   mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+  <div class="card  col-12 col-md-6 col-lg-4 shadow-lg ms-3 " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/shawrma.jpg" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SHAWERMA</h4>
+
+    <p class="card-text  mt-3  fw-bold">Tender slices of marinated meat grilled on rotating spit, wrapped in bread, with sauces. pickles, and vegetables.
+</p>
+
+    <a href="#" class="btn btn-warning   mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+
+
+
+<!--  -->
+
+
+
+
+
+ <div class="card  col-12 col-md-6 col-lg-4 shadow-lg  mx-auto   " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/meat.jpg" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">MEAT</h4>
+
+    <p class="card-text  mt-3  fw-bold">Succulent grilled meat prepared with spices, herbs, and sauces, delivering juicy texture and smoky flavor every bite.
+</p>
+
+    <a href="#" class="btn btn-warning   mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+     
+  <div class="card  col-12 col-md-6 col-lg-4 shadow-lg  mx-auto    " style="width:350px">
+  <img class="card-img-top  mt-3" src="images/ham.jpg" alt="Card image">
+  <div class="card-body  ">
+    <h4 class="card-title  mt-3 fw-bold"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">HAMBURGER</h4>
+
+    <p class="card-text  mt-3  fw-bold">Flaky Hamburger filled with cheese, meat, or sweet cream, baked until golden, offering crispy texture and delicious taste.
+</p>
+
+    <a href="#" class="btn btn-warning   mt-3 mb-3  fw-bold">See Profile</a>
+    
+    
+  </div>
+</div>
+
+
+    </div> 
+     </div> 
+       </div>
+
+
+<!------------------------------ss 5 ----all cards--8-----------E------------------  -->
+
+
+<!------------------------------ss 6 ----thanks for-------------s------------------  -->
+
+
+<div class="container-fluid bg-white"  style=" width: 100%;  margin-top: 500px;  padding: 0;">
+
+  <div style="height: 80px;" class="full-width-div  bg-secondary-subtle mt-3   p-0  d-flex  justify-content-center align-items-center  ">
+   <h2 class="text-dark  fw-bold  most">..Thanks For..</h2>
+</div>
+
+<div class="container">
+  <div class=" row justify-content-center">
+
+
+    <div class="col-lg-3 col-md-12 col-sm-12 "  style="padding-top:100px ;">
+      <div class="team-card1 ms-3 ">
+
+        
+        
+
+        <h6 class="team-name  ms-3 pt-3  fw-bold">All Thanks And Appreciation</h6>
+        <p class="team-date ms-3 mt-3 fw-bold ">
+           <i class="fa-regular fa-clock  fw-bold"></i>  June 22, 2023
+        </p>
+
+        <img src="images/im1.jpg" class="team-img" alt="">
+
+        <h6 class="team-name  ms-3  mt-3 mb-3   fw-bold">Eng. Salem Mohamed</h6>
+        <p class="team-role  ms-3 pb-1 fw-bold">Director Of UI/UX</p>
+
+      </div>
+    </div>
+
+
+
+<div class="col-lg-3 col-md-12 col-sm-12 "  style="padding-top:100px ;">
+      <div class="team-card2 ms-3 ">
+
+        
+        
+
+        <h6 class="team-name  ms-3 pt-3  fw-bold">All Thanks And Appreciation</h6>
+        <p class="team-date ms-3 mt-3 fw-bold ">
+           <i class="fa-regular fa-clock  fw-bold"></i>  June 22, 2023
+        </p>
+
+        <img src="images/im2.jpg" class="team-img" alt="">
+
+        <h6 class="team-name  ms-3  mt-3 mb-3   fw-bold">Eng. Salma Mohamed</h6>
+        <p class="team-role  ms-3 pb-1 fw-bold">Director Of UI/UX</p>
+
+      </div>
+    </div>
+
+
+
+
+<div class="col-lg-3 col-md-12 col-sm-12 "  style="padding-top:100px ;">
+      <div class="team-card3 ms-3">
+
+        
+        
+
+        <h6 class="team-name  ms-3 pt-3  fw-bold">All Thanks And Appreciation</h6>
+        <p class="team-date ms-3 mt-3 fw-bold ">
+           <i class="fa-regular fa-clock  fw-bold"></i>  June 22, 2023
+        </p>
+
+        <img src="images/im3.jpg" class="team-img" alt="">
+
+        <h6 class="team-name  ms-3  mt-3 mb-3   fw-bold">Eng. Karem Mohamed</h6>
+        <p class="team-role  ms-3 pb-1 fw-bold">Director Of UI/UX</p>
+
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+   <!------ss6---------------------------------E-----thanks for--------------------------  -->
+
+
+
+   <!------------------------------ss 7 ----resturant new-------------s------------------  -->
+
+     <style>
+        body { background-color: #f8f9fa; font-family: sans-serif; }
+        .custom-section { padding: 50px 0; }
+        
+        .podcast-card {
+          
+            background-color: #ffffff;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            margin-bottom: 40px;
+            min-height: 350px;
+        }
+
+        
+        .slanted-left {
+            clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+            object-fit: cover; height: 100%; width: 100%;
+            min-height: 350px;
+        }
+
+        
+        .slanted-right {
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+            object-fit: cover; height: 100%; width: 100%;
+            min-height: 350px;
+        }
+
+        .podcast-title { color: #f1c40f; font-weight: bold; font-style: italic; }
+        .date-text { font-size: 0.85rem; font-weight: bold; margin-bottom: 5px; }
+        .yellow-line { width: 80px; height: 3px; background-color: #f1c40f; margin-bottom: 15px; }
+        .description { font-size: 1.3rem; color: #444; line-height: 1.6; text-align: justify; }
+
+        
+        .btn-custom {
+            background-color: #f1c40f;
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            font-size: 0.85rem;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-gray { background-color: #95a5a6; }
+
+        @media (max-width: 767px) {
+            .slanted-left, .slanted-right { clip-path: none; height: 250px; }
+            .row-reverse-mobile { flex-direction: column-reverse; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-section">
+    <h2 class="text-center mb-5 text-secondary mt-5"><i>Restaurant News</i></h2>
+
+    <div class="card podcast-card shadow-lg mx-auto" style="max-width: 1200px;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1000" class="slanted-left" alt="food">
+            </div>
+            <div class="col-md-7 p-4  p-lg-5">
+                <h3 class="podcast-title">Podcast Title</h3>
+                <p class="date-text">Mon. May 25th 2020</p>
+                <div class="yellow-line"></div>
+                <p class="description">
+                    In Our Kitchen, Passion Doesn't Stop At Taste Alone; It Extends To Include Innovation And Renewal In Every Detail Of Our Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste...
+                </p>
+                <div class="d-flex gap-2 mt-4">
+                    <button class="btn-custom btn-gray"><i class="fas fa-microphone"></i> Podcast</button>
+                    <button class="btn-custom"><i class="fas fa-clock"></i> 43 mins</button>
+                    <button class="btn-custom"><i class="fas fa-play"></i> Play Episode</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card podcast-card shadow-lg mx-auto" style="max-width: 1200px;">
+        <div class="row g-0 row-reverse-mobile">
+            <div class="col-md-8 p-4 p-lg-5">
+                <h3 class="podcast-title">Podcast Title</h3>
+                <p class="date-text">Mon. May 25th 2020</p>
+                <div class="yellow-line"></div>
+                <p class="description">
+                    In Our Kitchen, Passion Doesn't Stop At Taste Alone; It Extends To Include Innovation And Renewal In Every Detail Of Our Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste...
+                </p>
+                <div class="d-flex gap-2 mt-4">
+                    <button class="btn-custom btn-gray"><i class="fas fa-microphone"></i> Podcast</button>
+                    <button class="btn-custom"><i class="fas fa-clock"></i> 43 mins</button>
+                    <button class="btn-custom"><i class="fas fa-play"></i> Play Episode</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1000" class="slanted-right" alt="pizza">
+            </div>
+
+            
+    
+    
+          </div>
+
+          
+    </div>
+    
+    
+    
+
+    <div class="card podcast-card shadow-lg mx-auto" style="max-width: 1200px;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="images/meal.jpg" class="slanted-left" alt="food">
+            </div>
+            <div class="col-md-7 p-4  p-lg-5">
+                <h3 class="podcast-title">Podcast Title</h3>
+                <p class="date-text">Mon. May 25th 2020</p>
+                <div class="yellow-line"></div>
+                <p class="description">
+                    In Our Kitchen, Passion Doesn't Stop At Taste Alone; It Extends To Include Innovation And Renewal In Every Detail Of Our Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste...
+                </p>
+                <div class="d-flex gap-2 mt-4">
+                    <button class="btn-custom btn-gray"><i class="fas fa-microphone"></i> Podcast</button>
+                    <button class="btn-custom"><i class="fas fa-clock"></i> 43 mins</button>
+                    <button class="btn-custom"><i class="fas fa-play"></i> Play Episode</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card podcast-card shadow-lg mx-auto" style="max-width: 1200px;">
+        <div class="row g-0 row-reverse-mobile">
+            <div class="col-md-8 p-4 p-lg-5">
+                <h3 class="podcast-title">Podcast Title</h3>
+                <p class="date-text">Mon. May 25th 2020</p>
+                <div class="yellow-line"></div>
+                <p class="description">
+                    In Our Kitchen, Passion Doesn't Stop At Taste Alone; It Extends To Include Innovation And Renewal In Every Detail Of Our Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of Distinctive Taste...
+                </p>
+                <div class="d-flex gap-2 mt-4">
+                    <button class="btn-custom btn-gray"><i class="fas fa-microphone"></i> Podcast</button>
+                    <button class="btn-custom"><i class="fas fa-clock"></i> 43 mins</button>
+                    <button class="btn-custom"><i class="fas fa-play"></i> Play Episode</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/meat.jpg" class="slanted-right" alt="pizza">
+            </div>
+
+
+
+</div>
+
+</div>
+
+
+
+<!-- ------------ss7----------E------------------------resturant news---------------------------- -->
+
+
+<!----------ss8---------------S------------link gruop-------------------------------------------  -->
+
+
+
+<style>
+        .custom-card {
+            margin-top: 100px;
+            margin-right: 15px;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.5); 
+            width: 200px;
+            padding: 20px 25px;
+            background: #fff;
+            transition: 0.3s;
+        }
+        .subscribe-text {
+            font-style: italic;
+            font-weight: bold;
+            color: #8a94a6;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+        .icon-3d {
+            font-size: 4rem;
+            display: inline-block;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .www {
+            color: #25D366;
+            text-shadow: 0 1px 0 #128C7E, 0 2px 0 #128C7E, 0 3px 0 #128C7E, 0 4px 0 #128C7E, 
+                         0 5px 0 #128C7E, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 
+                         0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25);
+        }
+        .ii {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            filter: drop-shadow(0 5px 4px rgba(0,0,0,0.3));
+        }
+        .iii {
+            color: #0077b5;
+            text-shadow: 0 1px 0 #005582, 0 2px 0 #005582, 0 3px 0 #005582, 0 4px 0 #005582, 
+                         0 5px 10px rgba(0,0,0,0.3);
+        }
+        .ttt {
+            color: #1da1f2;
+            text-shadow: 0 1px 0 #1a91da, 0 2px 0 #1a91da, 0 3px 0 #1a91da, 0 4px 0 #1a91da, 
+                         0 5px 10px rgba(0,0,0,0.3);
+        }
+        .go-link {
+            color: #4a69bd;
+            text-decoration: underline;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .go-link:hover {
+            color: #1e3799;
+        }
+    </style>
+
+
+<div class="container">
+    <div class="row g-4 justify-content-center">
+        
+        <div class="col-auto">
+            <div class="card custom-card text-center">
+                <div style="font-size: large;" class="subscribe-text">Subscribe Now</div>
+                <div class="icon-3d">
+                    <i class="fa-brands fa-whatsapp www"></i>
+                </div>
+                <a href="#" style="font-size: large;" class="go-link">Go To Link</a>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <div class="card custom-card text-center">
+                <div style="font-size: large;" class="subscribe-text">Subscribe Now</div>
+                <div class="icon-3d">
+                    <i class="fa-brands fa-instagram ii"></i>
+                </div>
+                <a href="#" style="font-size: large;" class="go-link ">Go To Link</a>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <div class="card custom-card text-center">
+                <div style="font-size: large;" class="subscribe-text">Subscribe Now</div>
+                <div class="icon-3d">
+                    <i class="fa-brands fa-linkedin  iii"></i>
+                </div>
+                <a href="#" style="font-size: large;" class="go-link">Go To Link</a>
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <div class="card custom-card text-center ">
+                <div style="font-size: large;" class="subscribe-text">Subscribe Now</div>
+                <div class="icon-3d">
+                    <i class="fa-brands fa-twitter ttt"></i>
+                </div>
+                <a href="#" style="font-size: large;" class="go-link">Go To Link</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!----------ss8---------------E------------link gruop-------------------------------------------  -->
+
+
+<!----------ss9---------------S-------------------Finish------------------------------------  -->
+<style>
+        
+        .finsh {
+            background-color: #6c757d; 
+            color: #ffffff;
+            padding: 40px 0 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-top: 150px;
+            
+        }
+
+        .footer-logo {
+            width: 100px;
+            height:100px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        .footer-title {
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            
+            
+        }
+
+        .footer-links p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+            color: #d1d1d1;
+        }
+
+        .copyright-bar {
+            background-color: #4a5568; 
+            color: #ffc107; 
+            padding: 22px 0;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+
+
+
+    <div  class="container-fluid finsh text-center">
+        <div class="container-fluid ">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <img src="images/ph1.webp" alt="Logo" class="footer-logo"> 
+                    <h5 class="footer-title fw-bold ">Good Company</h5>
+                    <hr>
+                    <div class="footer-links">
+                        <p class="fw-bold">Tel: 000-000-000</p>
+                        <p class="fw-bold">Address: EGYPT</p>
+                        <p class="fw-bold">Fax: 000-000-000</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/ph1.webp" alt="Logo" class="footer-logo">
+                    <h5 class="footer-title fw-bold">Important Links</h5>
+                    <hr>
+                    <div class="footer-links">
+                        <p class="fw-bold">Visit Us</p>
+                        <p class="fw-bold">Take A Look</p>
+                        <p class="fw-bold">Your Health Is More Important</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/ph1.webp" alt="Logo" class="footer-logo">
+                    <h5 class="footer-title fw-bold">Vision</h5>
+                    <hr>
+                    <div class="footer-links">
+                        <p class="fw-bold">Services For All</p>
+                        <p class="fw-bold">Provide Best Services</p>
+                        <p class="fw-bold"v>You Will Be Better Than Before</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-bar">
+        <div class="container text-center">
+            © 2025 FoodExpress. All Rights Reserved. Designed By Eng/ Kareem KHallaf
+        </div>
+    </div>
+<!----------ss9---------------E-------------------Finish------------------------------------  -->
+
+<!-- Bootstrap--- JS--- --------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script> 
+
+</body>
+</html>
